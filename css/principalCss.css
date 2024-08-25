@@ -1,0 +1,1075 @@
+body {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  background: #f3f5fc;
+}
+
+.caja-texto {
+  position: absolute;
+  width: 620px;
+  height: 160px;
+  left: 240px;
+  top: 249px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #0a3871;
+  border: none;
+  border-radius: 15px;
+  background-color: #f3f5fc;
+}
+
+.contenedor-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 240px;
+  top: 885px;
+}
+
+.button-copiar {
+  /* Button */
+  box-sizing: border-box;
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  position: absolute;
+  width: 336px;
+  height: 67px;
+  /* left: 1032px; */
+  top: 790px;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.button-copiar label {
+  /* Button */
+
+  width: 288px;
+  height: 19px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  /* Dark blue/dark-blue-300 */
+  color: #0a3871;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.button-encriptar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+
+  width: 328px;
+  height: 67px;
+
+  background: #0a3871;
+  border-radius: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: pointer;
+}
+
+.button-encriptar label {
+  /* Button */
+
+  width: 280px;
+  height: 19px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  /* White */
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+  cursor: pointer;
+}
+
+.button-desencriptar {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+
+  width: 328px;
+  height: 67px;
+
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  cursor: pointer;
+}
+
+.button-desencriptar label {
+  /* Button */
+
+  width: 280px;
+  height: 19px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  /* Dark blue/dark-blue-300 */
+  color: #0a3871;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.contenedor-solo-letras {
+  /* Frame 1 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 229px;
+  height: 18px;
+  left: 240px;
+  top: 851px;
+}
+
+.contenedor-solo-letras span {
+  /* Solo letras minúsculas y sin acentos */
+
+  width: 205px;
+  height: 18px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  /* Gray/gray-400 */
+  color: #495057;
+
+  opacity: 0.8;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.contenedor-signo {
+  /* Group */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.contenedor-signo label {
+  /* Vector */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  /* Gray/gray-400 */
+  background: #495057;
+}
+
+.respuesta-texto {
+  position: absolute;
+  width: 336px;
+  height: 707px;
+  bottom: -50%;
+  display: none;
+  text-align: center;
+}
+
+#respuesta-encriptada {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  top: 20px;
+  position: absolute;
+  color: #495057;
+  width: 350px;
+  height: 745px;
+  border: none;
+  word-wrap: break-word;
+  display: none;
+}
+
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+/*telefono 768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px768px x 1174px*/
+
+@media (max-width: 768px) and (aspect-ratio: 768/1174) {
+  body {
+    /* Encriptador - 1 Tablet */
+
+    position: relative;
+    width: 768px;
+    height: 1174px;
+
+    /* Light blue/light-blue-100 */
+    background: #f3f5fc;
+  }
+
+  .caja-texto {
+    position: absolute;
+    width: 87%;
+    height: 140px;
+    left: 40px;
+    top: 240px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0a3871;
+  }
+
+  .contenedor-solo-letras {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 40px;
+    top: 836px;
+  }
+
+  .contenedor-solo-letras span {
+    /* Solo letras minúsculas y sin acentos */
+
+    width: 205px;
+    height: 18px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .contenedor-button {
+    /* Frame 3 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left: 40px;
+    top: 870px;
+  }
+
+  .button-encriptar {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0a3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  .button-encriptar label {
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    /* padding: 24px; */
+    gap: 8px;
+    /* width: 332px; */
+    /* height: 67px; */
+    /* background: #0A3871; */
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    cursor: pointer;
+  }
+
+  .button-desencriptar {
+    /* Button */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+    cursor: pointer;
+  }
+
+  .button-desencriptar label {
+    /* Button */
+
+    width: 284px;
+    height: 19px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+    color: #0a3871;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    cursor: pointer;
+  }
+
+  .respuesta-textos {
+    /* Frame 5 */
+
+    /* Auto layout */
+    width: 624px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    overflow: auto;
+
+    top: 0;
+  }
+
+  #respuesta-encriptada {
+    width: 624px;
+    height: 24px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    /* word-wrap: break-word; */
+    height: 50px;
+    overflow: auto;
+  }
+
+  .button-copiar {
+    box-sizing: border-box;
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    /* left: 1032px; */
+    top: 83px;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+    color: #0a3871;
+    cursor: pointer;
+    background-color: white;
+  }
+}
+
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+/*telefono 768px x 1384 768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384768px x 1384*/
+
+@media (max-width: 768px) and (aspect-ratio: 768/1384) {
+  body {
+    /* Encriptador - 2 Tablet */
+    position: relative;
+    width: 768px;
+    height: 1384px;
+    background: #f3f5fc;
+  }
+
+  .button-copiar {
+    /* Button */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 624px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    top: 245px;
+
+    background-color: white;
+  }
+
+  .contenedor-button {
+    /* Frame 3 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left: 40px;
+    top: 870px;
+  }
+
+  .button-encriptar {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0a3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .button-encriptar label {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    background: #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .button-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+  }
+
+  .button-desencriptar label {
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    flex: none;
+    order: 1;
+  }
+
+  .caja-texto {
+    position: absolute;
+    width: 688px;
+    height: 288px;
+    left: 40px;
+    top: 240px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* or 48px */
+
+    /* Dark blue/dark-blue-300 */
+    color: #0a3871;
+  }
+
+  .contenedor-solo-letras {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 40px;
+    top: 836px;
+  }
+
+  .contenedor-solo-letras span {
+    width: 205px;
+    height: 18px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  #respuesta-encriptada {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    top: 20px;
+    position: absolute;
+    color: #495057;
+    width: 90%;
+    height: 285px;
+    word-wrap: break-word;
+    border: none;
+  }
+}
+
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+/*telefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933pxtelefono 375px x 933px*/
+
+@media (max-width: 375px) and (aspect-ratio: 375/933) {
+  body {
+    /* Encriptador - 2 Tablet */
+    position: relative;
+    width: 375px;
+    height: 933px;
+    background: #f3f5fc;
+  }
+
+  .button-copiar {
+    box-sizing: border-box;
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 100%;
+    height: 67px;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    top: 72%;
+    background-color: white;
+  }
+
+  .contenedor-button {
+    /* Frame 3 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 343px;
+    height: 158px;
+    left: 16px;
+    top: 485px;
+  }
+
+  .button-encriptar {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0a3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .button-encriptar label {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    background: #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .button-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+  }
+
+  .button-desencriptar label {
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    flex: none;
+    order: 1;
+  }
+
+  .caja-texto {
+    /* Ingrese el texto aqui */
+
+    position: absolute;
+    width: 343px;
+    height: 48px;
+    left: 16px;
+    top: 152px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+
+    /* Dark blue/dark-blue-300 */
+    color: #0a3871;
+  }
+
+  .contenedor-solo-letras {
+    /* Frame 1 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 16px;
+    top: 451px;
+  }
+
+  .contenedor-solo-letras span {
+    width: 205px;
+    height: 18px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  #respuesta-encriptada {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    top: 20px;
+    position: absolute;
+    color: #495057;
+    width: 99%;
+    height: 60%;
+    word-wrap: break-word;
+    border: none;
+  }
+}
+
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+/*telefono 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px 375px x 375px x 1775px*/
+
+@media (max-width: 375px) and (aspect-ratio: 375/1715) {
+  body {
+    /* Encriptador - 2 Tablet */
+    position: relative;
+    width: 375px;
+    height: 1715px;
+    background: #f3f5fc;
+  }
+
+  .button-copiar {
+    box-sizing: border-box;
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 90%;
+    height: 67px;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    top: 86%;
+    left: 5%;
+    background-color: white;
+  }
+
+  .contenedor-button {
+    /* Frame 3 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 343px;
+    height: 158px;
+    left: 16px;
+    top: 44%;
+  }
+
+  .button-encriptar {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0a3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .button-encriptar label {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    background: #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .button-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 332px;
+    height: 67px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+  }
+
+  .button-desencriptar label {
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    flex: none;
+    order: 1;
+  }
+
+  .caja-texto {
+    position: absolute;
+    width: 97%;
+    height: 30%;
+    left: 0;
+    top: 152px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0a3871;
+  }
+
+  .contenedor-solo-letras {
+    /* Frame 1 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 16px;
+    top: 42%;
+  }
+
+  .contenedor-solo-letras span {
+    width: 205px;
+    height: 18px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  #respuesta-encriptada {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    top: 20px;
+    position: absolute;
+    color: #495057;
+    width: 99%;
+    height: 80%;
+    word-wrap: break-word;
+    border: none;
+  }
+}

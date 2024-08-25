@@ -1,0 +1,326 @@
+.contenedor-rectangulo {
+  /* Rectangle 1 */
+
+  position: absolute;
+  width: 400px;
+  height: 944px;
+  left: 1000px;
+  top: 40px;
+
+  /* White */
+  background: #ffffff;
+  /* shadow */
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+
+  /*codigo nuevo*/
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-munieco {
+  /* Muñeco */
+
+  position: absolute;
+  width: 336px;
+  height: 304px;
+
+  /*quitamos el left. porque genera conflicto*/
+  /*left: 1032px;*/
+  top: 283px;
+}
+
+.contenedor-mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  /* gap: 16px; */
+  position: absolute;
+  width: 336px;
+  height: 122px;
+  /* left: 1032px; */
+  top: 619px;
+}
+
+.contenedor-mensaje h2 {
+  /* Ningún mensaje fue encontrado */
+
+  width: 336px;
+  height: 58px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+  text-align: center;
+
+  /* Gray/gray-500 */
+  color: #343a40;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.contenedor-mensaje p {
+  /* Ingresa el texto que desees encriptar o desencriptar. */
+
+  width: 336px;
+  height: 48px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  text-align: center;
+
+  /* Gray/gray-400 */
+  color: #495057;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+@media (max-width: 768px) and (aspect-ratio: 768/1174) {
+  .contenedor-munieco {
+    display: none;
+  }
+
+  .contenedor-rectangulo {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    padding: 32px;
+    gap: 32px;
+    position: absolute;
+    width: 630px;
+    height: 100px;
+    left: 40px;
+    top: 1001px;
+    /*background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);*/
+    border-radius: 32px;
+    align-items: center;
+  }
+
+  .contenedor-mensaje {
+    /* Frame 5 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    /* White */
+    /* shadow */
+    border-radius: 32px;
+  }
+
+  .contenedor-mensaje h2 {
+    /* Ningún mensaje fue encontrado */
+
+    width: 624px;
+    height: 29px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+    text-align: center;
+
+    /* Gray/gray-500 */
+    color: #343a40;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .contenedor-mensaje p {
+    /* Ingresa el texto que desees encriptar o desencriptar. */
+
+    width: 624px;
+    height: 24px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+
+@media (max-width: 768px) and (aspect-ratio: 768/1384) {
+  .contenedor-munieco {
+    display: none;
+  }
+
+  .contenedor-rectangulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+
+    position: absolute;
+    width: 630px;
+    height: 275px;
+    left: 40px;
+    top: 1001px;
+
+    /* White */
+    background: #ffffff;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    align-items: center;
+  }
+
+  .contenedor-mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    /* gap: 32px; */
+    position: absolute;
+    width: 605px;
+    height: 254px;
+    /* left: 40px; */
+    top: 0;
+    border-radius: 32px;
+    justify-content: center;
+  }
+
+  .contenedor-mensaje h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .contenedor-mensaje p {
+    width: 100%;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 375px) and (aspect-ratio: 375/933) {
+  .contenedor-munieco {
+    display: none;
+  }
+
+  .contenedor-rectangulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 32px; */
+    gap: 32px;
+    /* position: absolute; */
+    width: 98%;
+    height: 26%;
+    left: 0;
+    top: 70%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+
+  .contenedor-mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 32px; */
+    /* gap: 32px; */
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    border-radius: 32px;
+  }
+
+  .contenedor-mensaje h2 {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .contenedor-mensaje p {
+    width: 100%;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 375px) and (aspect-ratio: 375/1715) {
+  .contenedor-munieco {
+    display: none;
+  }
+
+  .contenedor-rectangulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 32px; */
+    gap: 32px;
+    /* position: absolute; */
+    width: 97%;
+    height: 43%;
+    left: 0;
+    top: 55%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+
+  .contenedor-mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 32px; */
+    /* gap: 32px; */
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 30%;
+    border-radius: 32px;
+  }
+
+  .contenedor-mensaje h2 {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .contenedor-mensaje p {
+    width: 100%;
+    font-size: 23px;
+  }
+}
