@@ -92,3 +92,14 @@ function copiarTexto() {
 
     document.body.removeChild(areaTemporal);
 }
+
+function filtrarTexto() {
+    const textarea = document.getElementById('txtTexto');
+    const texto = textarea.value;
+    
+    const textoFiltrado = texto
+        .replace(/[A-ZÁÉÍÓÚÑáéíóúñ]/g, '')  
+        .replace(/[áéíóú]/g, '') 
+        .replace(/[ÁÉÍÓÚÑ]/g, '') 
+    textarea.value = textoFiltrado;
+}
